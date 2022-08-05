@@ -1,196 +1,36 @@
--- Instances:
+local getgenv = true
 
-local ScreenGui = Instance.new("ScreenGui")
-local Button = Instance.new("TextButton")
-local UICorner = Instance.new("UICorner")
-local Shadow = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local Folder = Instance.new("Folder")
-local TextLabel = Instance.new("TextLabel")
-local Gradient = Instance.new("Frame")
-local UIGradient = Instance.new("UIGradient")
-local UICorner_3 = Instance.new("UICorner")
-local Folder_2 = Instance.new("Folder")
-local Pattern = Instance.new("ImageLabel")
-local Button_2 = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
-local Shadow_2 = Instance.new("Frame")
-local UICorner_5 = Instance.new("UICorner")
-local Folder_3 = Instance.new("Folder")
-local TextLabel_2 = Instance.new("TextLabel")
-
---Properties:
-
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-Button.Name = "Button"
-Button.Parent = ScreenGui
-Button.BackgroundColor3 = Color3.fromRGB(77, 100, 150)
-Button.BorderSizePixel = 0
-Button.Position = UDim2.new(0.0399538577, 0, 0.0958896875, 0)
-Button.Size = UDim2.new(0, 257, 0, 71)
-Button.ZIndex = 2
-Button.Font = Enum.Font.GothamMedium
-Button.Text = ""
-Button.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button.TextScaled = true
-Button.TextSize = 14.000
-Button.TextWrapped = true
-
-UICorner.Parent = Button
-
-Shadow.Name = "Shadow"
-Shadow.Parent = Button
-Shadow.BackgroundColor3 = Color3.fromRGB(53, 69, 103)
-Shadow.BorderSizePixel = 0
-Shadow.Size = UDim2.new(1, 0, 1, 4)
-
-UICorner_2.Parent = Shadow
-
-Folder.Parent = Button
-
-TextLabel.Parent = Folder
-TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.461089492, 0, 0.497147471, 0)
-TextLabel.Size = UDim2.new(1, -20, 1, -20)
-TextLabel.ZIndex = 2
-TextLabel.Font = Enum.Font.GothamMedium
-TextLabel.Text = "Launch"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
-
-Gradient.Name = "Gradient"
-Gradient.Parent = ScreenGui
-Gradient.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Gradient.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Gradient.BorderSizePixel = 0
-Gradient.Position = UDim2.new(0.0271493196, 0, 0.0755626857, 0)
-Gradient.Size = UDim2.new(0, 286, 0, 202)
-
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(224, 43, 39)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(168, 3, 3))}
-UIGradient.Parent = Gradient
-
-UICorner_3.CornerRadius = UDim.new(0, 20)
-UICorner_3.Parent = Gradient
-
-Folder_2.Parent = Gradient
-
-Pattern.Name = "Pattern"
-Pattern.Parent = Folder_2
-Pattern.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pattern.BackgroundTransparency = 1.000
-Pattern.Size = UDim2.new(0, 286, 0, 202)
-Pattern.ZIndex = 9
-Pattern.Image = "rbxassetid://159991693"
-Pattern.ImageTransparency = 0.600
-Pattern.ScaleType = Enum.ScaleType.Tile
-Pattern.SliceCenter = Rect.new(0, 256, 0, 256)
-Pattern.TileSize = UDim2.new(0, 30, 0, 30)
-
-Button_2.Name = "Button"
-Button_2.Parent = ScreenGui
-Button_2.BackgroundColor3 = Color3.fromRGB(77, 100, 150)
-Button_2.BorderSizePixel = 0
-Button_2.Position = UDim2.new(0.0399538577, 0, 0.24219197, 0)
-Button_2.Size = UDim2.new(0, 257, 0, 71)
-Button_2.ZIndex = 2
-Button_2.Font = Enum.Font.GothamMedium
-Button_2.Text = ""
-Button_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button_2.TextScaled = true
-Button_2.TextSize = 14.000
-Button_2.TextWrapped = true
-
-UICorner_4.Parent = Button_2
-
-Shadow_2.Name = "Shadow"
-Shadow_2.Parent = Button_2
-Shadow_2.BackgroundColor3 = Color3.fromRGB(53, 69, 103)
-Shadow_2.BorderSizePixel = 0
-Shadow_2.Size = UDim2.new(1, 0, 1, 4)
-
-UICorner_5.Parent = Shadow_2
-
-Folder_3.Parent = Button_2
-
-TextLabel_2.Parent = Folder_3
-TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.461089492, 0, 0.497147471, 0)
-TextLabel_2.Size = UDim2.new(1, -20, 1, -20)
-TextLabel_2.ZIndex = 2
-TextLabel_2.Font = Enum.Font.GothamMedium
-TextLabel_2.Text = "Close"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextWrapped = true
-
--- Scripts:
-
-local function SZWJC_fake_script() -- Button.LocalScript 
-	local script = Instance.new('LocalScript', Button)
-
-	local getgenv = true
+while true do
+	local RarityColours = {
+		["Resplendent"] = Color3.fromRGB(255, 255, 255), -- White
+	};
 	
-	script.Parent.MouseButton1Click:Connect(function()
-		while true do
-			local RarityColours = {
-				["Resplendent"] = Color3.fromRGB(255, 255, 255), -- White
-			};
+	local function AddBillboard(Part)
+		local Colour = Color3.fromRGB(84, 84, 84);
 	
-			local function AddBillboard(Part)
-				local Colour = Color3.fromRGB(84, 84, 84);
+		local BillboardGui = Instance.new("Highlight", Part)
+		BillboardGui.FillTransparency = 1
 	
-				local BillboardGui = Instance.new("Highlight", Part)
-				BillboardGui.FillTransparency = 1
-	
-				local Frame = Instance.new("Frame", BillboardGui);
-				Frame.Size = UDim2.new(1, 0, 1, 0);
-				Frame.BorderSizePixel = 0;
-				Frame.BackgroundColor3 = Colour;
-			end
+		local Frame = Instance.new("Frame", BillboardGui);
+		Frame.Size = UDim2.new(1, 0, 1, 0);
+		Frame.BorderSizePixel = 0;
+		Frame.BackgroundColor3 = Colour;
+	end
 			
-			for _, char in pairs(game.Workspace:GetChildren()) do
-				-- Making sure we're only looking at the bags
-				if char.ClassName ~= "Model" then continue; end
-				if not char:FindFirstChild("SoundPart") then continue; end
+	for _, char in pairs(game.Workspace:GetChildren()) do
+		-- Making sure we're only looking at the bags
+		if char.ClassName ~= "Model" then continue; end
+		if not char:FindFirstChild("SoundPart") then continue; end
 	
-				-- Deleting the old BillboardGui if it exists
-				if char:FindFirstChild("BillboardGui") then 
-					char:FindFirstChild("BillboardGui"):Destroy(); 
-				end
-	
-				if getgenv then
-					AddBillboard(char);
-				end
-			end
-	
-			wait(2);
+		-- Deleting the old BillboardGui if it exists
+		if char:FindFirstChild("BillboardGui") then 
+		char:FindFirstChild("BillboardGui"):Destroy(); 
 		end
-		wait(1)
-		script.Parent.Parent:Destroy()
-	end)
 	
+		if getgenv then
+		AddBillboard(char);
+		end
+	end
+	
+	wait(2);
 end
-coroutine.wrap(SZWJC_fake_script)()
-local function EOYL_fake_script() -- Button_2.LocalScript 
-	local script = Instance.new('LocalScript', Button_2)
-
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent:Destroy()
-	end)
-	
-end
-coroutine.wrap(EOYL_fake_script)()
