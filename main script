@@ -164,7 +164,7 @@ local function SZWJC_fake_script() -- Button.LocalScript
 			for _, char in pairs(game.Workspace:GetChildren()) do
 				-- Making sure we're only looking at the bags
 				if char.ClassName ~= "Model" then continue; end
-				if not char:FindFirstChild("HumanoidRootPart") then continue; end
+				if not char:FindFirstChild("Animate") then continue; end
 	
 				-- Deleting the old BillboardGui if it exists
 				if char:FindFirstChild("BillboardGui") then 
